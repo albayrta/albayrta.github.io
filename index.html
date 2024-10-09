@@ -5,14 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index Page</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Centering content and aligning images */
+        .center-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 20px; /* Space between the text and the images */
+        }
+
+        /* Styling for the images */
+        .center-content img {
+            height: 50px; /* Adjust size as needed */
+            width: auto;
+        }
+
+        /* Mirror the left image */
+        .center-content img.mirror {
+            transform: scaleX(-1);
+        }
+    </style>
 </head>
 <body>
 
     <!-- Taskbar will be loaded here -->
     <div id="taskbar-container"></div>
 
-    <h1>Welcome to the Index Page</h1>
-    <p>This is the main page. Use the taskbar to navigate between pages.</p>
+    <!-- Centered content with images -->
+    <div class="center-content">
+        <!-- Mirrored emoji on the left -->
+        <img src="emoji.jpeg" alt="Emoji" class="mirror">
+        <!-- Text content -->
+        <div>
+            <h1>Welcome to the Index Page</h1>
+            <p>This is the main page. Use the taskbar to navigate between pages.</p>
+        </div>
+        <!-- Emoji on the right -->
+        <img src="emoji.jpeg" alt="Emoji">
+    </div>
 
     <script>
         // JavaScript to load the taskbar from taskbar.html
