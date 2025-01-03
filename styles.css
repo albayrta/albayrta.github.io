@@ -1,7 +1,13 @@
 /* styles.css */
+
+/* Taskbar styling */
 .taskbar {
     background-color: #333;
     overflow: hidden;
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 10px 10px 0; /* Add small margin to top, left, and right */
 }
 
 .taskbar a {
@@ -11,8 +17,43 @@
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
 }
 
 .taskbar a:hover {
     background-color: #575757;
+}
+
+/* Global font application and background */
+body {
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    margin: 0;
+    padding: 0;
+    background-color: #181818; /* ChatGPT grey color */
+    color: white; /* Make all text white */
+
+    height: 100vh; /* Ensure it covers the full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Centering content and aligning images */
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px; /* Space between the text and the images */
+    flex-grow: 1; /* Ensures it occupies remaining space */
+}
+
+/* Styling for the images */
+.center-content img {
+    height: 50px; /* Adjust size as needed */
+    width: auto;
+}
+
+/* Mirror the left image */
+.center-content img.mirror {
+    transform: scaleX(-1);
 }
