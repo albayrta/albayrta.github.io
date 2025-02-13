@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded YouTube Video</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <!-- Taskbar will be loaded here -->
+        <div id="taskbar-container"></div>
+    
+        <script>
+            // JavaScript to load the taskbar from taskbar.html
+            fetch('taskbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('taskbar-container').innerHTML = data;
+                });
+        </script>
+    <h1>Embedded YouTube Video</h1>
+    <iframe width="320" height="180" 
+            src="https://www.youtube.com/embed/8hiHE4yNuJw" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+    
+</body>
+</html>
