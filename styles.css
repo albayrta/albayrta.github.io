@@ -32,12 +32,13 @@ body {
     background-color: #181818; /* ChatGPT grey color */
     color: white; /* Make all text white */
 
-    height: 100vh; /* Ensure it covers the full viewport height */
+    /* height: 100vh;  */
+    /* Ensure it covers the full viewport height */
     display: flex;
     flex-direction: column;
 
     /* Add padding to the left side */
-    padding-left: 20px; /* Adjust the value as needed */
+    padding-left: 20px; 
     
 }
 

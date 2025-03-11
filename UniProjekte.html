@@ -6,32 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projekte an der Universität</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<style>
-    /* Add base styles */
-    body {
-        font-family: 'Roboto', sans-serif;
-        overflow: hidden; /* Prevent scrollbars due to particles */
-    }
+    <style>
+        /* Add base styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            
+            overflow-x: hidden; 
+            overflow-y: auto; 
+            /* overflow: hidden;  */
+        }
 
-</style>
+        /* Style für den Textabsatz */
+        p {
+            font-size: 1.5em; /*Anpassen der Schriftgröße an die H1*/
+            font-weight: normal; /* Schriftstärke auf normal setzen */
+            margin-bottom: 0.9em; /* Abstand zum oberen Element verringern */
+        }
+
+        h1 {
+            margin-bottom: 0.2em; /* Abstand zum unteren Element verringern */
+        }
+
+        /* Style für den weißen Rahmen um die iframes */
+        iframe {
+            border: 2px solid white; /* Rahmen hinzufügen */
+            box-sizing: border-box; /* Stellt sicher, dass der Rahmen nicht die Größe des iframes beeinflusst */
+            margin-bottom: 1em; /* Optional: Fügt einen Abstand unterhalb des Rahmens hinzu */
+        }
+
+        #taskbar-container {
+            margin-left: -20px; /*Negative margin*/
+        }
+    </style>
+</head>
+
+    <!-- Taskbar will be loaded here -->
+    <div id="taskbar-container"></div>
 <body>
     
     <!-- Particle Animation -->
     <div id="particles-js"></div>
 
-    <!-- Taskbar will be loaded here -->
-    <div id="taskbar-container"></div>
-    <h1>Test</h1>
 
-    <h1>Veranstaltung "Human-Centered Artificial Intelligence for Health Care Lab": Mitarbeit an der Entwicklung eines RAG-Chatbots</h1>
+
+    <h1>Veranstaltung "Human-Centered Artificial Intelligence for Health Care Lab":</h1>
+    <p>Mitarbeit an der Entwicklung eines RAG-Chatbots</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/1pdZdN_tyOA?si=LUTvjkxf6WeKiI_P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-    <h1>Veranstaltung "Softwareprojekt": Mitarbeit an der Entwicklung einer Mitarbeiterverwaltungssoftware für das Unternehmen "makandra"</h1>
+    <h1>Veranstaltung "Softwareprojekt":</h1>
+    <p>Mitarbeit an der Entwicklung einer Mitarbeiterverwaltungssoftware für das Unternehmen "makandra"</p>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/gxYsaUDMweU?si=5Uj-kEo0b05llf1D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-</body>
 
+    
+</body>
 
 <!-- Include particles.js library -->
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -44,6 +72,5 @@
         });
 </script>
 <script src="particle-effect.js"></script>
-
 
 </html>
