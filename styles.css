@@ -34,8 +34,8 @@ body {
 
     /* height: 100vh;  */
     /* Ensure it covers the full viewport height */
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
 
     /* Add padding to the left side */
     padding-left: 20px; 
